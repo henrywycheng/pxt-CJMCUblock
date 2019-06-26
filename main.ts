@@ -1,4 +1,4 @@
-//% weight=0 color=#3CB371 icon="\uf2b9" block="CJMCU Block"
+//% weight=0 color=#3CB371 icon="\uf2b9" block="CJMCUBlock"
 
 namespace CJMCUblock {
     /* 有傳回值旳拼塊 */
