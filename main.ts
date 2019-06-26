@@ -1,6 +1,6 @@
-//% weight=0 color=#3CB371 icon="\uf2b9" block="CJMCU 8118"
+//% weight=0 color=#3CB371 icon="\uf2b9" block="CJMCU-8118"
 
-namespace CJMCUblock {
+namespace CJMCU8118 {
     /* 有傳回值旳拼塊 */
     //% blockId="addTwoNum" block="calculate total of num1 %num1|num2 %num2"
     //% blockGap=2 weight=90 blockExternalInputs=true
