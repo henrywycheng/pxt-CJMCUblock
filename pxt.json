@@ -1,7 +1,7 @@
 {
-    "name": "CJMCU block",
+    "name": "CJMCU-8118 block",
     "version": "0.0.1",
-    "description": "這是自製的 micro:bit CJMCU 積木",
+    "description": "這是自製的 micro:bit CJMCU-8118 積木",
     "license": "MIT",
     "dependencies": {
         "core": "*"
