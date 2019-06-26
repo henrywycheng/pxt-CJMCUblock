@@ -1,1 +1,6 @@
-
+{
+    "CJMCUblock|block": "自訂",
+    "CJMCUblock.addTwoNum|block": "計算兩數和 第一數 %num1|第二數 %num2",
+    "CJMCUblock.showStringWithTime|block": "間隔時間的字串顯示 字串 %str|間隔 %delay",
+    "CJMCUblock.celcius2farenheit|block": "攝氏轉換華氏 溫度 %num1"
+}
