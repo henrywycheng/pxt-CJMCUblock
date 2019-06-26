@@ -1,7 +1,7 @@
 {
-    "name": "selfblock",
+    "name": "CJMCUblock",
     "version": "0.0.1",
-    "description": "這是自製的 micro:bit 積木",
+    "description": "這是自製的 micro:bit CJMCU 積木",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/selfblock-strings.json"
+        "_locales/zh/CJMCUblock-strings.json"
     ],
     "public": true
 }
