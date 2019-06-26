@@ -1,6 +1,6 @@
 # CJMCU-8118 block
 
-這是自製的 micro:bit CJMCU-8118 積木
+這是自製的 micro:bit CJMCU-8119 積木
 
 ## License
 
