@@ -1,4 +1,4 @@
-# CJMCU-8119 block
+# CJMCUblock
 
 這是自製的 micro:bit CJMCU-8118 積木
 
