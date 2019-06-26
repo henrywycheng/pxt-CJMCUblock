@@ -1,21 +1,21 @@
-//% weight=0 color=#3CB371 icon="\uf2b9" block="SelfBlock"
+//% weight=0 color=#3CB371 icon="\uf2b9" block="CJMCU Block"
 
-namespace selfblock {
-    /* ¦³¶Ç¦^­ÈÊú«÷¶ô */
+namespace CJMCUblock {
+    /* æœ‰å‚³å›žå€¼æ—³æ‹¼å¡Š */
     //% blockId="addTwoNum" block="calculate total of num1 %num1|num2 %num2"
     //% blockGap=2 weight=90 blockExternalInputs=true
     export function addTwoNum(num1: number, num2:number): number {
         return num1+num2
     }
 
-    /* µL¶Ç¦^­ÈÊú«÷¶ô */
+    /* ç„¡å‚³å›žå€¼æ—³æ‹¼å¡Š */
     //% blockId="showStringWithTime" block="show string %str|with delay time %delay"
     //% blockGap=2 weight=80
     export function showStringWithTime(str: string, delay:number): void {
         basic.showString(str,delay)
     }
 
-    /* ¦³¶Ç¦^­ÈÊú«÷¶ô */
+    /* æœ‰å‚³å›žå€¼æ—³æ‹¼å¡Š */
     //% blockId="celcius2farenheit" block="convert Celcius to Farenheit num1 %num1"
     //% blockGap=2 weight=90
     export function celcius2farenheit(num1: number): number {
