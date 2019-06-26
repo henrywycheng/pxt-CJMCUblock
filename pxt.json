@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/CJMCUblock-strings.json"
+        "_locales/zh/selfblock-strings.json"
     ],
     "public": true
 }
