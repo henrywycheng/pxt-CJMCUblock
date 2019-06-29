@@ -2,6 +2,34 @@
 
 namespace CJMCU8118 {
 
+    /* CJMCU-8118 HDC1080 Temp&Humidity sensor addr 0x40 */
+    /* CJMCU-8118 CCS811 Gas sensor addr 0x5A */
+    //% blockId="CJMCUStart" block="CJMCU-8118 Start"
+    //% blockGap=2 weight=80
+    export function CJMCUStart(): boolean {
+	pins.setPull(DigitalPin.P19, PinPullMode.PullUp)
+	pins.setPull(DigitalPin.P20, PinPullMode.PullUp)
+	basic.pause(200)
+	/* Read HDC1080 Device ID = 0x1050 */
+	pins.i2cWriteNumber(64,255,NumberFormat.UInt8LE,false)
+	basic.pause(200)
+	if (pins.i2cReadNumber(64, NumberFormat.UInt16BE, false) != 4176) {
+		return false
+	}
+	basic.pause(200)
+	/* Set to normal condition & Tempearture or Humidity is acquired, register 0x02 data 0x020000(00) */
+	pins.i2cWriteNumber(64,33554432,NumberFormat.UInt32BE,false)
+	basic.pause(200)
+	/* Read register 0x02 to check 0x00 */
+	pins.i2cWriteNumber(64,2,NumberFormat.UInt8LE,false)
+	basic.pause(200)
+	if (pins.i2cReadNumber(64, NumberFormat.UInt16BE, false) != 0) {
+		return false
+	}
+	basic.pause(200)
+	return true
+    }
+
     /* CJMCU-8118 HDC1080 Temp&Humidity sensor addr 0x40 register 0xFF return 0x1050 */
     //% blockId="CJMCUTHIDno" block="CJMCU8118 TH IDno"
     //% blockGap=2 weight=79
